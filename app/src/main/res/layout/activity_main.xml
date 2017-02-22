@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.fachri.makerinstitute.milkordering.MainActivity">
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp"
+            android:text="@string/topping"
+            android:textSize="@dimen/size_checbox"/>
+
+        <CheckBox
+            android:id="@+id/creamCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/whipped_cream"
+            android:textSize="@dimen/size_checbox"/>
+
+        <CheckBox
+            android:id="@+id/chocolateCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/chocolate"
+            android:textSize="@dimen/size_checbox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp"
+            android:text="@string/quantity_of_milk"
+            android:textSize="@dimen/size_checbox"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/incrementOrderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementOrder"
+                android:text="@string/plus"/>
+
+            <TextView
+                android:id="@+id/quantityMilkTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_16dp"
+                android:layout_marginRight="@dimen/padding_16dp"
+                android:text="@string/zero"
+                android:textSize="@dimen/size_checbox"
+                />
+
+            <Button
+                android:id="@+id/decrementOrderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="decrementOrder"
+                android:text="@string/minus"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp"
+            android:text="@string/order_summary"
+            android:textSize="@dimen/size_checbox"/>
+
+        <TextView
+            android:id="@+id/orderSumarryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textSize="@dimen/size_checbox"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="reset"
+                android:text="@string/reset"/>
+
+            <Button
+                android:id="@+id/orderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showTotalPrice"
+                android:text="@string/order"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

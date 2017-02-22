@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Milk Ordering</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="quantity_of_milk">Quantity of Milk</string>
+    <string name="reset">Reset</string>
+    <string name="order">Order</string>
+
+    <string name="name">Name: Fachri</string>
+
+    <string name="order_summaries" formatted="false">Name: Fachri\n
+        Ordering %d Glass of Milk\n
+        Each Milk is $ %d \n
+        The total price is $ %d \n
+        Thank you</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="topping">Topping</string>
+
+    <integer name="weight_sum">2</integer>
+    <integer name="weight_size">1</integer>
+    <string name="title_activity_menu">MenuActivity</string>
+
+
+</resources>
